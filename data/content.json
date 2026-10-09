@@ -1,0 +1,184 @@
+{
+  "_huong_dan": {
+    "1_muc_dich": "FILE NAY LA NGUON DU LIEU DUY NHAT de cap nhat website. Sua xong thi luu file, tai lai trang la xong. Khong can sua index.html.",
+    "2_cach_mo": "Mo file =chuot phai > Open with > Notepad (hoac mo bang Visual Studio Code). Sau khi sua, kiem tra bang https://jsonformatter.org de tranh loi dau phay / dau nhay kep.",
+    "3_may_chu": "Khi chay tren GitHub Pages, trang se doc file nay. Khi mo index.html truc tiep bang file:// trinh duyen chan doc file nen trang dung ban sao nhung trong index.html - vi vay phai tai (commit) ca file index.html lan data/content.json.",
+    "4_ky_tu_tieng_viet": "Giu nguyen bo dau tieng Viet, luu file voi ma hoa UTF-8.",
+    "5_khong_duoc_lam": "Khong them dau phay o phan tu cuoi danh sach; khong viet ghi chu // trong file JSON; khong dung dau nhay kep trong noi dung (dung dau nhay don va ke tu dau nhay)."
+  },
+  "map": {
+    "_huong_dan": "center la toa do WGS84 thap phan [lat, lng] cua tru so UBND xa. Zoom 12-14 la phu hop.",
+    "center": [
+      17.74264,
+      105.957717
+    ],
+    "zoom": 12,
+    "ghi_chu": "Toa do da kiem chung: 17.742640,105.957717 -> 'Xa Kim Phu', tinh Quang Tri, Viet Nam (reverse-geocode BigDataCloud, do cao 189 m). Zoom 12 de bao trum ca xa."
+  },
+  "points": [
+    {
+      "lat": 17.74264,
+      "lng": 105.957717,
+      "title": "Trụ sở Công an Xã Kim Phú",
+      "badge": "An toàn",
+      "status": "An toàn",
+      "desc": "Trực ban 02323.575.568. DỮ LIỆU MẪU - thay bằng số liệu khảo sát thực tế của xã.",
+      "type": "green"
+    },
+    {
+      "lat": 17.75464,
+      "lng": 105.973717,
+      "title": "Chợ trung tâm xã Kim Phú",
+      "badge": "Cảnh báo",
+      "status": "Ngập cục bộ",
+      "desc": "Khu vực dân cư tập trung, cần khảo sát mức ngập. DỮ LIỆU MẪU - thay bằng số liệu khảo sát thực tế của xã.",
+      "type": "amber"
+    },
+    {
+      "lat": 17.72464,
+      "lng": 105.967717,
+      "title": "Ngầm tràn suối vùng trũng",
+      "badge": "Ngập nặng",
+      "status": "Ngập nặng",
+      "desc": "Điểm cấm qua lại khi nước dâng. DỮ LIỆU MẪU - thay bằng số liệu khảo sát thực tế của xã.",
+      "type": "red"
+    },
+    {
+      "lat": 17.76264,
+      "lng": 105.945717,
+      "title": "Tuyến đường liên thôn đi cửa khẩu",
+      "badge": "Nguy cơ sạt lở",
+      "status": "Cảnh báo sạt lở",
+      "desc": "Đất đá taluy, cần rào chắn cảnh báo. DỮ LIỆU MẪU - thay bằng số liệu khảo sát thực tế của xã.",
+      "type": "red"
+    }
+  ],
+  "lien_he": {
+    "_ghi_chu": "Sửa số điện thoại, Zalo, địa chỉ, giờ làm việc tại đây. Trường 'goi' la so KHONG dau cham de bam Goi/Zalo/SMS duoc luon. Dia chi tru so can can bo sung cho dung.",
+    "sms": "02323575568",
+    "zalo": "02323575568",
+    "gio_lam_viec": "Thứ 2 đến Thứ 7: 07h30 - 17h00",
+    "kenh": [
+      {
+        "icon": "fa-comments",
+        "nham": "Trao đổi, gửi ảnh/video hiện trường qua Zalo",
+        "ten": "Zalo: 0232.357.568",
+        "goi": "02323575568",
+        "loai": "zalo"
+      },
+      {
+        "icon": "fa-location-dot",
+        "nham": "Trụ sở Công an xã Kim Phú (nộp đơn, trình báo trực tiếp)",
+        "ten": "Thôn ?, xã Kim Phú, tỉnh Quảng Trị",
+        "loai": "dia_chi"
+      },
+      {
+        "icon": "fa-file-signature",
+        "nham": "Ban Chỉ huy Công an xã - tiếp nhận đơn tố giác",
+        "ten": "Nộp đơn trực tiếp tại trụ sở, giờ hành chính",
+        "loai": "khac"
+      },
+      {
+        "icon": "fa-user-shield",
+        "nham": "Thôn trưởng / Trưởng thôn (bổ sung số điện thoại từng thôn)",
+        "ten": "02323.575.568 - số trực ban chung",
+        "goi": "02323575568",
+        "loai": "tel"
+      }
+    ]
+  },
+  "_points_type": {
+    "red": "Ngập nặng / Sạt lở (dot do)",
+    "amber": "Canh bao (dot vang)",
+    "green": "An toan (dot xanh)"
+  },
+  "categories": [
+    {
+      "key": "all",
+      "label": "Tất cả"
+    },
+    {
+      "key": "vneid",
+      "label": "VNeID & Giấy Tờ",
+      "badgeClass": "bg-blue-600"
+    },
+    {
+      "key": "ansinh",
+      "label": "An Sinh & BHYT",
+      "badgeClass": "bg-emerald-600"
+    },
+    {
+      "key": "giaothong",
+      "label": "Tra Cứu Phạt Nguội",
+      "badgeClass": "bg-amber-600"
+    },
+    {
+      "key": "lupluot",
+      "label": "Phòng Chống Lụt Bão",
+      "badgeClass": "bg-red-700"
+    }
+  ],
+  "videos": [
+    {
+      "youtubeId": "vV2OXRtGBb0",
+      "title": "Hướng dẫn tích hợp các loại giấy tờ (GPLX, Đăng ký xe, BHYT) vào ứng dụng VNeID",
+      "modalTitle": "Hướng dẫn tích hợp giấy phép lái xe và BHYT vào VNeID",
+      "desc": "Cán bộ Công an xã hướng dẫn chi tiết các bước xác thực tài khoản định danh và tích hợp giấy tờ cá nhân.",
+      "duration": "01:53",
+      "category": "vneid",
+      "thumb": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "youtubeId": "NXB3k0uN-Pg",
+      "title": "Tích hợp Bảo hiểm y tế và cách tra cứu mã số thẻ BHYT nhanh chóng trên điện thoại",
+      "modalTitle": "Tích hợp bảo hiểm y tế và cách tra cứu mã số thẻ BHYT",
+      "desc": "Hướng dẫn bà con tra cứu quá trình tham gia BHXH, BHYT và sử dụng hình ảnh thẻ BHYT trên VNeID khi đi khám chữa bệnh.",
+      "duration": "02:15",
+      "category": "ansinh",
+      "thumb": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "youtubeId": "KQjyO0JfrAo",
+      "title": "Hướng dẫn liên kết tài khoản ngân hàng và tích hợp tài khoản an sinh xã hội nhận chi trả trợ cấp",
+      "modalTitle": "Hướng dẫn tích hợp tài khoản an sinh xã hội",
+      "desc": "Các bước khai báo tài khoản phục vụ chi trả an sinh xã hội không dùng tiền mặt theo chủ trương của nhà nước.",
+      "duration": "01:00",
+      "category": "ansinh",
+      "thumb": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "youtubeId": "KmpfiMVRdm8",
+      "title": "Hướng dẫn cách tra cứu phạt nguội vi phạm giao thông chính xác trên cổng thông tin Cục CSGT",
+      "modalTitle": "Hướng dẫn tra cứu phạt nguội giao thông toàn quốc",
+      "desc": "Giúp bà con chủ động kiểm tra biển số xe ô tô, xe máy để nắm bắt thông tin xử lý vi phạm giao thông đúng quy định.",
+      "duration": "03:20",
+      "category": "giaothong",
+      "thumb": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "youtubeId": "8sOyFn8TwEU",
+      "title": "Kỹ năng phòng chống lũ quét, bảo vệ tính mạng và di dời tài sản mùa mưa bão tại Quảng Trị",
+      "modalTitle": "Kỹ năng phòng chống lũ quét và di dời tài sản an toàn",
+      "desc": "Những nguyên tắc vàng bà con cần nắm rõ để đảm bảo an toàn tuyệt đối khi nước lũ dâng nhanh.",
+      "duration": "01:10",
+      "category": "lupluot",
+      "thumb": "https://images.unsplash.com/photo-1547683905-f686c993aae5?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "youtubeId": "6e6n9K3n1YM",
+      "title": "Cách Tra Cứu Mã Số Bảo Hiểm Xã Hội Online",
+      "modalTitle": "Hướng dẫn tra cứu mã số bảo hiểm xã hội online",
+      "desc": "Hướng dẫn cách tra cứu mã số bảo hiểm xã hội (BHXH) trực tuyến, giúp bạn nhanh chóng tìm lại mã số BHXH của mình thông qua website Bảo hiểm xã hội Việt Nam.",
+      "duration": "01:43",
+      "category": "vneid",
+      "thumb": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=600&auto=format&fit=crop"
+    }
+  ],
+  "videos_huong_dan": {
+    "youtubeId": "lay tu duong link video: https://youtu.be/XXXXXXX -> XX la youtubeId (11 ky tu)",
+    "thumb": "Anh dai dien. Nen dung anh that cua dia phuong, dat trong thu muc images/ roi dat la images/ten-anh.jpg. Dung duong link mang neu khong co anh.",
+    "category": "phai trung voi key trong danh sach categories",
+    "duration": "dang phut:giay, vi du 02:45",
+    "them_moi": "Them mot doi { ... } vao danh sach videos. Muon them nhom loc moi thi them mot doi vao categories roi dung key do trong videos."
+  }
+}
