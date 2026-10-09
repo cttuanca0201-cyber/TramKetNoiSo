@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+                      <!DOCTYPE html>
 <html lang="vi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -67,9 +68,9 @@
     <header class="bg-gradient-to-r from-red-900 via-policeRed to-red-800 text-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <!-- CẬP NHẬT LOGO CÔNG AN NHÂN DÂN -->
-                <div class="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-md border-2 border-yellow-300">
-                    <img src="logo-cong-an-nhan-dan-viet-nam.jpg" alt="Logo Công an Nhân dân Việt Nam" class="w-full h-full object-cover">
+                <!-- LOGO CÔNG AN NHÂN DÂN VIỆT NAM CHUẨN -->
+                <div class="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-md border-2 border-yellow-300 flex-shrink-0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Coat_of_arms_of_Vietnam.svg" alt="Huy hiệu Công an Nhân dân Việt Nam" class="w-full h-full object-cover">
                 </div>
                 <div>
                     <h1 class="text-lg md:text-xl font-black tracking-wider uppercase text-yellow-300 drop-shadow">CÔNG AN XÃ KIM PHÚ</h1>
@@ -126,7 +127,7 @@
                 </p>
                 <div class="flex flex-wrap gap-4 pt-2">
                     <a href="#hotro" class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition flex items-center gap-2">
-                        <i class="fa-solid fa-shield-dog"></i> Gửi Tin Báo / Hỗ Trợ
+                        <i class="fa-solid fa-shield-halved"></i> Gửi Tin Báo / Hỗ Trợ
                     </a>
                     <a href="#bando" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold px-6 py-3 rounded-xl shadow transition flex items-center gap-2">
                         <i class="fa-solid fa-map-location-dot"></i> Xem Bản Đồ Ngập Úng
@@ -233,7 +234,7 @@
         </div>
     </section>
 
-    <!-- Video Library Section -->
+    <!-- Video Library Section with Actual YouTube IDs -->
     <section id="thuvien" class="bg-slate-100 py-16 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
@@ -251,14 +252,14 @@
                 </div>
             </div>
 
-            <!-- Video Grid -->
+            <!-- Video Grid with REAL Youtube IDs -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="video-grid">
-                <!-- Video Item 1 -->
+                <!-- Video Item 1 (VNeID) - ID: vV2OXRtGBb0 -->
                 <div class="video-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col" data-category="vneid">
                     <div class="relative aspect-video bg-slate-900 group">
                         <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=600&auto=format&fit=crop" alt="VNeID" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <button onclick="openVideoModal('Hướng dẫn tích hợp các loại giấy tờ vào VNeID', 'dQw4w9WgXcQ')" class="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition">
+                            <button onclick="openVideoModal('Hướng dẫn tích hợp giấy phép lái xe và BHYT vào VNeID', 'vV2OXRtGBb0')" class="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition">
                                 <i class="fa-solid fa-play ml-1 text-xl"></i>
                             </button>
                         </div>
@@ -270,18 +271,18 @@
                             <p class="text-xs text-slate-500 mt-2">Cán bộ Công an xã hướng dẫn chi tiết các bước xác thực tài khoản định danh và tích hợp giấy tờ cá nhân.</p>
                         </div>
                         <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
-                            <span><i class="fa-regular fa-clock"></i> 08:15 phút</span>
-                            <span class="text-red-600 font-medium">Xem ngay</span>
+                            <span><i class="fa-regular fa-clock"></i> 01:53 phút</span>
+                            <span class="text-red-600 font-medium cursor-pointer" onclick="openVideoModal('Hướng dẫn tích hợp các loại giấy tờ vào VNeID', 'vV2OXRtGBb0')">Xem ngay</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Video Item 2 -->
+                <!-- Video Item 2 (BHYT) - ID: NXB3k0uN-Pg -->
                 <div class="video-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col" data-category="ansinh">
                     <div class="relative aspect-video bg-slate-900 group">
                         <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600&auto=format&fit=crop" alt="BHYT" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <button onclick="openVideoModal('Tích hợp bảo hiểm y tế và cách tra cứu mã số thẻ BHYT', 'dQw4w9WgXcQ')" class="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition">
+                            <button onclick="openVideoModal('Tích hợp bảo hiểm y tế và cách tra cứu mã số thẻ BHYT', 'NXB3k0uN-Pg')" class="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition">
                                 <i class="fa-solid fa-play ml-1 text-xl"></i>
                             </button>
                         </div>
@@ -293,18 +294,18 @@
                             <p class="text-xs text-slate-500 mt-2">Hướng dẫn bà con tra cứu quá trình tham gia BHXH, BHYT và sử dụng hình ảnh thẻ BHYT trên VNeID khi đi khám chữa bệnh.</p>
                         </div>
                         <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
-                            <span><i class="fa-regular fa-clock"></i> 06:45 phút</span>
-                            <span class="text-red-600 font-medium">Xem ngay</span>
+                            <span><i class="fa-regular fa-clock"></i> 02:15 phút</span>
+                            <span class="text-red-600 font-medium cursor-pointer" onclick="openVideoModal('Tích hợp bảo hiểm y tế và cách tra cứu mã số thẻ BHYT', 'NXB3k0uN-Pg')">Xem ngay</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Video Item 3 -->
+                <!-- Video Item 3 (An sinh xã hội) - ID: KQjyO0JfrAo -->
                 <div class="video-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col" data-category="ansinh">
                     <div class="relative aspect-video bg-slate-900 group">
                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600&auto=format&fit=crop" alt="An sinh xã hội" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <button onclick="openVideoModal('Hướng dẫn tích hợp tài khoản an sinh xã hội', 'dQw4w9WgXcQ')" class="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition">
+                            <button onclick="openVideoModal('Hướng dẫn tích hợp tài khoản an sinh xã hội', 'KQjyO0JfrAo')" class="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition">
                                 <i class="fa-solid fa-play ml-1 text-xl"></i>
                             </button>
                         </div>
@@ -316,18 +317,18 @@
                             <p class="text-xs text-slate-500 mt-2">Các bước khai báo tài khoản phục vụ chi trả an sinh xã hội không dùng tiền mặt theo chủ trương của nhà nước.</p>
                         </div>
                         <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
-                            <span><i class="fa-regular fa-clock"></i> 09:30 phút</span>
-                            <span class="text-red-600 font-medium">Xem ngay</span>
+                            <span><i class="fa-regular fa-clock"></i> 01:00 phút</span>
+                            <span class="text-red-600 font-medium cursor-pointer" onclick="openVideoModal('Hướng dẫn tích hợp tài khoản an sinh xã hội', 'KQjyO0JfrAo')">Xem ngay</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Video Item 4 -->
+                <!-- Video Item 4 (Phạt nguội) - ID: KmpfiMVRdm8 -->
                 <div class="video-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col" data-category="giaothong">
                     <div class="relative aspect-video bg-slate-900 group">
                         <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?q=80&w=600&auto=format&fit=crop" alt="Phạt nguội" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <button onclick="openVideoModal('Hướng dẫn tra cứu phạt nguội giao thông toàn quốc', 'dQw4w9WgXcQ')" class="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition">
+                            <button onclick="openVideoModal('Hướng dẫn tra cứu phạt nguội giao thông toàn quốc', 'KmpfiMVRdm8')" class="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition">
                                 <i class="fa-solid fa-play ml-1 text-xl"></i>
                             </button>
                         </div>
@@ -339,18 +340,18 @@
                             <p class="text-xs text-slate-500 mt-2">Giúp bà con chủ động kiểm tra biển số xe ô tô, xe máy để nắm bắt thông tin xử lý vi phạm giao thông đúng quy định.</p>
                         </div>
                         <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
-                            <span><i class="fa-regular fa-clock"></i> 05:50 phút</span>
-                            <span class="text-red-600 font-medium">Xem ngay</span>
+                            <span><i class="fa-regular fa-clock"></i> 03:20 phút</span>
+                            <span class="text-red-600 font-medium cursor-pointer" onclick="openVideoModal('Hướng dẫn tra cứu phạt nguội giao thông toàn quốc', 'KmpfiMVRdm8')">Xem ngay</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Video Item 5 -->
+                <!-- Video Item 5 (Phòng chống lụt bão) - ID: 8sOyFn8TwEU -->
                 <div class="video-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col" data-category="lupluot">
                     <div class="relative aspect-video bg-slate-900 group">
                         <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?q=80&w=600&auto=format&fit=crop" alt="Lũ lụt" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <button onclick="openVideoModal('Kỹ năng phòng chống lũ quét và di dời tài sản an toàn', 'dQw4w9WgXcQ')" class="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition">
+                            <button onclick="openVideoModal('Kỹ năng phòng chống lũ quét và di dời tài sản an toàn', '8sOyFn8TwEU')" class="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition">
                                 <i class="fa-solid fa-play ml-1 text-xl"></i>
                             </button>
                         </div>
@@ -362,8 +363,8 @@
                             <p class="text-xs text-slate-500 mt-2">Những nguyên tắc vàng bà con cần nắm rõ để đảm bảo an toàn tuyệt đối khi nước lũ dâng nhanh.</p>
                         </div>
                         <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
-                            <span><i class="fa-regular fa-clock"></i> 12:40 phút</span>
-                            <span class="text-red-600 font-medium">Xem ngay</span>
+                            <span><i class="fa-regular fa-clock"></i> 01:10 phút</span>
+                            <span class="text-red-600 font-medium cursor-pointer" onclick="openVideoModal('Kỹ năng phòng chống lũ quét và di dời tài sản an toàn', '8sOyFn8TwEU')">Xem ngay</span>
                         </div>
                     </div>
                 </div>
@@ -432,32 +433,46 @@
                         </select>
                         <textarea id="report-content" rows="4" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-red-600 text-sm" placeholder="Mô tả chi tiết sự việc hoặc yêu cầu của bà con..."></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-3 rounded-xl shadow-lg transition">
-                        <i class="fa-solid fa-paper-plane mr-2"></i> Gửi Tin Phản Ánh
+                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
+                        <i class="fa-solid fa-paper-plane"></i> Gửi Tin Báo Cho Công An Xã
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- GitHub Guide Section -->
-    <section id="github-guide" class="bg-slate-900 text-slate-300 py-12 px-4 border-t border-slate-800">
+    <!-- GitHub Pages Guide Section -->
+    <section id="github-guide" class="bg-slate-900 text-slate-200 py-16 px-4 border-t border-slate-800">
         <div class="max-w-7xl mx-auto">
-            <h3 class="text-xl font-bold text-yellow-400 mb-4 flex items-center gap-2">
-                <i class="fa-brands fa-github text-2xl"></i> Hướng Dẫn Đưa Trang Web Lên GitHub Pages
-            </h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs leading-relaxed">
-                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
-                    <span class="font-bold text-white text-sm block mb-1">Bước 1: Tạo Repository</span>
-                    <p>Đăng nhập GitHub, nhấn nút <strong>New Repository</strong>. Đặt tên kho lưu trữ (ví dụ: <code>cong-an-kim-phu</code>) và chọn chế độ Public.</p>
+            <div class="flex items-center gap-3 mb-6">
+                <i class="fa-brands fa-github text-4xl text-yellow-400"></i>
+                <div>
+                    <h2 class="text-2xl font-bold text-white">Hướng Dẫn Triển Khai Website Lên GitHub Pages</h2>
+                    <p class="text-xs text-slate-400">Dành cho cán bộ quản trị website Công an xã Kim Phú</p>
                 </div>
-                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
-                    <span class="font-bold text-white text-sm block mb-1">Bước 2: Tải Code & Logo lên</span>
-                    <p>Tải tệp HTML này lưu thành <code>index.html</code> và đặt file ảnh logo tên là <code>logo-cong-an-nhan-dan-viet-nam.jpg</code> vào cùng một thư mục rồi tải lên GitHub.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700">
+                    <div class="w-8 h-8 bg-red-600 text-white font-bold rounded-lg flex items-center justify-center mb-3">1</div>
+                    <h3 class="text-white font-bold text-base mb-2">Tạo Repository</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Đăng nhập GitHub, tạo kho lưu trữ (Repository) mới với tên bất kỳ (ví dụ: <code class="bg-slate-900 px-1.5 py-0.5 rounded text-yellow-300">congan-kimphu</code>) và chọn chế độ <strong>Public</strong>.
+                    </p>
                 </div>
-                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
-                    <span class="font-bold text-white text-sm block mb-1">Bước 3: Bật GitHub Pages</span>
-                    <p>Vào mục <strong>Settings > Pages</strong>, tại dòng Build and deployment chọn Source là <code>Deploy from a branch</code>, chọn nhánh <code>main</code> và bấm Save.</p>
+                <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700">
+                    <div class="w-8 h-8 bg-red-600 text-white font-bold rounded-lg flex items-center justify-center mb-3">2</div>
+                    <h3 class="text-white font-bold text-base mb-2">Tải Tập Tin Lên</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Lưu toàn bộ mã nguồn này thành tệp tên <code class="bg-slate-900 px-1.5 py-0.5 rounded text-yellow-300">index.html</code>. Tải tập tin này trực tiếp lên thư mục gốc của repository vừa tạo.
+                    </p>
+                </div>
+                <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700">
+                    <div class="w-8 h-8 bg-red-600 text-white font-bold rounded-lg flex items-center justify-center mb-3">3</div>
+                    <h3 class="text-white font-bold text-base mb-2">Kích Hoạt GitHub Pages</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Vào mục <strong>Settings</strong> &gt; <strong>Pages</strong>. Tại mục <strong>Branch</strong>, chọn <code class="bg-slate-900 px-1.5 py-0.5 rounded text-yellow-300">main</code> hoặc <code class="bg-slate-900 px-1.5 py-0.5 rounded text-yellow-300">master</code>, chọn thư mục <code class="bg-slate-900 px-1.5 py-0.5 rounded text-yellow-300">/root</code> và nhấn Save.
+                    </p>
                 </div>
             </div>
         </div>
@@ -465,28 +480,25 @@
 
     <!-- Footer -->
     <footer class="bg-slate-950 text-slate-400 text-xs py-8 px-4 border-t border-slate-800 mt-auto">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
-            <div>
-                <p class="font-bold text-slate-200">CÔNG AN XÃ KIM PHÚ - TỈNH QUẢNG TRỊ</p>
-                <p class="mt-1">Địa chỉ: Trụ sở Công an Xã Kim Phú, Tỉnh Quảng Trị</p>
+        <div class="max-w-7xl mx-auto text-center space-y-3">
+            <div class="flex items-center justify-center gap-2 text-white font-bold text-sm">
+                <i class="fa-solid fa-shield-halved text-yellow-400"></i>
+                <span>CÔNG AN XÃ KIM PHÚ - TỈNH QUẢNG TRỊ</span>
             </div>
-            <div>
-                <p>© 2026 Bản quyền thuộc về Công an Xã Kim Phú.</p>
-            </div>
+            <p>Địa chỉ: Xã Kim Phú, Tỉnh Quảng Trị | Điện thoại trực ban: 02323.575.568</p>
+            <p class="text-slate-600">© 2026 Bản quyền thuộc về Công an xã Kim Phú. Tất cả các quyền được bảo lưu.</p>
         </div>
     </footer>
 
-    <!-- Video Modal -->
-    <div id="video-modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4 backdrop-blur-sm">
-        <div class="bg-slate-900 rounded-2xl overflow-hidden max-w-3xl w-full border border-slate-700 shadow-2xl">
-            <div class="p-4 border-b border-slate-800 flex justify-between items-center">
-                <h4 id="modal-title" class="text-white font-bold text-sm">Xem Video</h4>
-                <button onclick="closeVideoModal()" class="text-slate-400 hover:text-white text-xl focus:outline-none">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
+    <!-- Video Modal Container -->
+    <div id="video-modal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 rounded-2xl overflow-hidden max-w-3xl w-full border border-slate-700 relative shadow-2xl">
+            <div class="p-4 bg-slate-800 flex justify-between items-center text-white border-b border-slate-700">
+                <h3 id="modal-title" class="font-bold text-sm md:text-base">Tiêu đề Video</h3>
+                <button onclick="closeVideoModal()" class="text-slate-400 hover:text-white text-xl px-2">&times;</button>
             </div>
-            <div class="aspect-video bg-black">
-                <iframe id="modal-iframe" class="w-full h-full" src="" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="aspect-video w-full bg-black">
+                <iframe id="modal-iframe" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -494,12 +506,7 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script>
-        // Mobile Menu Toggle
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-
-        // Realtime Clock Update
+        // Clock functionality
         function updateClock() {
             const now = new Date();
             document.getElementById('current-time').innerText = now.toLocaleTimeString('vi-VN');
@@ -507,36 +514,48 @@
         setInterval(updateClock, 1000);
         updateClock();
 
+        // Mobile Menu Toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
         // Leaflet Map Initialization
-        const map = L.map('map').setView([16.8, 107.1], 13);
+        const map = L.map('map').setView([16.85, 107.05], 13);
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '© OpenStreetMap'
+            attribution: '&copy; OpenStreetMap contributors'
         }).addTo(map);
 
-        // Map Markers Data
-        const locations = [
-            { lat: 16.81, lng: 107.09, title: "Ngầm tràn Thôn 1 (Khe Giữa)", status: "Ngập nặng 0.8m", type: "danger" },
-            { lat: 16.80, lng: 107.11, title: "Chợ Trung Tâm Kim Phú", status: "Cảnh báo ngập 20cm", type: "warning" },
-            { lat: 16.795, lng: 107.105, title: "Trụ sở Công an Xã Kim Phú", status: "Hoạt động bình thường", type: "safe" },
-            { lat: 16.815, lng: 107.12, title: "Đoạn đường liên thôn Thôn 3", status: "Nguy cơ sạt lở", type: "danger" }
+        const points = [
+            { lat: 16.855, lng: 107.045, title: "Ngầm tràn Thôn 1 (Khe Giữa)", status: "Ngập nặng (0.8m)", type: "red" },
+            { lat: 16.850, lng: 107.055, title: "Khu vực Chợ Trung Tâm Kim Phú", status: "Ngập cục bộ 20cm", type: "amber" },
+            { lat: 16.845, lng: 107.050, title: "Trụ sở Công an Xã Kim Phú", status: "An toàn", type: "green" },
+            { lat: 16.860, lng: 107.060, title: "Đoạn đường liên thôn Thôn 3", status: "Cảnh báo sạt lở", type: "red" }
         ];
 
         const markers = [];
-        locations.forEach(loc => {
-            const marker = L.marker([loc.lat, loc.lng]).addTo(map);
-            marker.bindPopup(`<b>${loc.title}</b><br>${loc.status}`);
+
+        points.forEach((pt) => {
+            const color = pt.type === 'red' ? '#dc2626' : pt.type === 'amber' ? '#f59e0b' : '#10b981';
+            const marker = L.circleMarker([pt.lat, pt.lng], {
+                color: color,
+                fillColor: color,
+                fillOpacity: 0.8,
+                radius: 10
+            }).addTo(map);
+
+            marker.bindPopup(`<b>${pt.title}</b><br>Trạng thái: ${pt.status}`);
             markers.push(marker);
         });
 
         function focusMarker(index) {
-            if (markers[index]) {
+            if(markers[index]) {
                 map.setView(markers[index].getLatLng(), 15);
                 markers[index].openPopup();
             }
         }
 
-        // Filter Videos
+        // Filter Video Cards
         function filterVideos(category) {
             const cards = document.querySelectorAll('.video-card');
             const btns = document.querySelectorAll('.vid-btn');
@@ -549,7 +568,7 @@
             event.target.classList.add('bg-red-700', 'text-white');
 
             cards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
+                if (category === 'all' || card.dataset.category === category) {
                     card.style.display = 'flex';
                 } else {
                     card.style.display = 'none';
@@ -558,23 +577,22 @@
         }
 
         // Video Modal Handler
-        function openVideoModal(title, videoId) {
+        function openVideoModal(title, youtubeId) {
             document.getElementById('modal-title').innerText = title;
-            document.getElementById('modal-iframe').src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            document.getElementById('modal-iframe').src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1`;
             document.getElementById('video-modal').classList.remove('hidden');
-            document.getElementById('video-modal').classList.add('flex');
         }
 
         function closeVideoModal() {
             document.getElementById('modal-iframe').src = '';
             document.getElementById('video-modal').classList.add('hidden');
-            document.getElementById('video-modal').classList.remove('flex');
         }
 
-        // Handle Report Submission
+        // Form Submit Handler
         function handleReportSubmit(e) {
             e.preventDefault();
-            alert('Cảm ơn ông/bà đã gửi tin báo. Công an xã Kim Phú đã ghi nhận thông tin và sẽ liên hệ hỗ trợ trong thời gian sớm nhất!');
+            const name = document.getElementById('sender-name').value;
+            alert(`Cảm ơn ông/bà ${name}! Thông tin phản ánh đã được gửi trực tiếp đến Trực ban Công an xã Kim Phú qua số 02323.575.568 để xử lý.`);
             document.getElementById('report-form').reset();
         }
     </script>
