@@ -37,6 +37,10 @@
             70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(239, 68, 68, 0); }
             100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
         }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
@@ -63,8 +67,9 @@
     <header class="bg-gradient-to-r from-red-900 via-policeRed to-red-800 text-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-red-900 font-bold shadow-md border-2 border-yellow-300">
-                    <i class="fa-solid fa-shield-halved text-2xl"></i>
+                <!-- CẬP NHẬT LOGO CÔNG AN NHÂN DÂN -->
+                <div class="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-md border-2 border-yellow-300">
+                    <img src="logo-cong-an-nhan-dan-viet-nam.jpg" alt="Logo Công an Nhân dân Việt Nam" class="w-full h-full object-cover">
                 </div>
                 <div>
                     <h1 class="text-lg md:text-xl font-black tracking-wider uppercase text-yellow-300 drop-shadow">CÔNG AN XÃ KIM PHÚ</h1>
@@ -427,94 +432,74 @@
                         </select>
                         <textarea id="report-content" rows="4" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-red-600 text-sm" placeholder="Mô tả chi tiết sự việc hoặc yêu cầu của bà con..."></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl shadow transition text-sm flex items-center justify-center gap-2">
-                        <i class="fa-solid fa-paper-plane"></i> Gửi Tin Báo Đến Công An Xã
+                    <button type="submit" class="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-3 rounded-xl shadow-lg transition">
+                        <i class="fa-solid fa-paper-plane mr-2"></i> Gửi Tin Phản Ánh
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- GitHub Pages Guide Section -->
-    <section id="github-guide" class="bg-slate-900 text-white py-16 px-4 border-t border-slate-800">
+    <!-- GitHub Guide Section -->
+    <section id="github-guide" class="bg-slate-900 text-slate-300 py-12 px-4 border-t border-slate-800">
         <div class="max-w-7xl mx-auto">
-            <div class="max-w-3xl mx-auto text-center mb-10">
-                <span class="text-yellow-400 font-bold uppercase tracking-widest text-xs">Triển Khai Miễn Phí</span>
-                <h2 class="text-3xl font-extrabold text-white mt-1">Hướng Dẫn Đưa Trang Web Lên GitHub Pages</h2>
-                <p class="text-slate-400 text-sm mt-2">Chỉ với vài bước đơn giản, bà con hoặc cán bộ có thể xuất bản trang web này lên tên miền miễn phí của GitHub (github.io).</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-3">
-                    <div class="w-10 h-10 bg-yellow-500 text-slate-900 font-black rounded-xl flex items-center justify-center text-lg">1</div>
-                    <h3 class="font-bold text-base text-white">Tạo tài khoản GitHub</h3>
-                    <p class="text-xs text-slate-300 leading-relaxed">
-                        Truy cập <a href="https://github.com" target="_blank" class="text-yellow-400 underline">github.com</a> và đăng ký một tài khoản miễn phí nếu chưa có.
-                    </p>
+            <h3 class="text-xl font-bold text-yellow-400 mb-4 flex items-center gap-2">
+                <i class="fa-brands fa-github text-2xl"></i> Hướng Dẫn Đưa Trang Web Lên GitHub Pages
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs leading-relaxed">
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
+                    <span class="font-bold text-white text-sm block mb-1">Bước 1: Tạo Repository</span>
+                    <p>Đăng nhập GitHub, nhấn nút <strong>New Repository</strong>. Đặt tên kho lưu trữ (ví dụ: <code>cong-an-kim-phu</code>) và chọn chế độ Public.</p>
                 </div>
-                <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-3">
-                    <div class="w-10 h-10 bg-yellow-500 text-slate-900 font-black rounded-xl flex items-center justify-center text-lg">2</div>
-                    <h3 class="font-bold text-base text-white">Tạo Repository mới</h3>
-                    <p class="text-xs text-slate-300 leading-relaxed">
-                        Tạo một kho lưu trữ (repository) mới đặt tên là <code class="bg-slate-900 px-1.5 py-0.5 rounded text-yellow-300">kimphu-police</code> và chọn chế độ <strong>Public</strong>.
-                    </p>
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
+                    <span class="font-bold text-white text-sm block mb-1">Bước 2: Tải Code & Logo lên</span>
+                    <p>Tải tệp HTML này lưu thành <code>index.html</code> và đặt file ảnh logo tên là <code>logo-cong-an-nhan-dan-viet-nam.jpg</code> vào cùng một thư mục rồi tải lên GitHub.</p>
                 </div>
-                <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-3">
-                    <div class="w-10 h-10 bg-yellow-500 text-slate-900 font-black rounded-xl flex items-center justify-center text-lg">3</div>
-                    <h3 class="font-bold text-base text-white">Tải file lên & Kích hoạt</h3>
-                    <p class="text-xs text-slate-300 leading-relaxed">
-                        Upload file mã nguồn này và đặt tên là <code class="bg-slate-900 px-1.5 py-0.5 rounded text-yellow-300">index.html</code>. Vào <strong>Settings</strong> -> <strong>Pages</strong> -> chọn nguồn từ nhánh <strong>main/root</strong> để xuất bản website!
-                    </p>
+                <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
+                    <span class="font-bold text-white text-sm block mb-1">Bước 3: Bật GitHub Pages</span>
+                    <p>Vào mục <strong>Settings > Pages</strong>, tại dòng Build and deployment chọn Source là <code>Deploy from a branch</code>, chọn nhánh <code>main</code> và bấm Save.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 text-slate-400 py-10 px-4 border-t border-slate-900 text-center md:text-left">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer class="bg-slate-950 text-slate-400 text-xs py-8 px-4 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
             <div>
-                <h3 class="text-white font-bold text-base">CÔNG AN XÃ KIM PHÚ - TỈNH QUẢNG TRỊ</h3>
-                <p class="text-xs text-slate-500 mt-1">Trực ban 24/7: 02323.575.568 • Bản quyền © 2026</p>
+                <p class="font-bold text-slate-200">CÔNG AN XÃ KIM PHÚ - TỈNH QUẢNG TRỊ</p>
+                <p class="mt-1">Địa chỉ: Trụ sở Công an Xã Kim Phú, Tỉnh Quảng Trị</p>
             </div>
-            <div class="text-xs text-slate-500 text-center md:text-right">
-                <p>Vì nước quên thân, vì dân phục vụ.</p>
-                <p class="mt-1">Địa chỉ: Trụ sở Công an Xã Kim Phú, Tỉnh Quảng Trị.</p>
+            <div>
+                <p>© 2026 Bản quyền thuộc về Công an Xã Kim Phú.</p>
             </div>
         </div>
     </footer>
 
     <!-- Video Modal -->
     <div id="video-modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4 backdrop-blur-sm">
-        <div class="bg-slate-900 w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl border border-slate-700 flex flex-col">
-            <div class="flex justify-between items-center p-4 border-b border-slate-800">
-                <h3 id="modal-title" class="text-white font-bold text-base">Xem video hướng dẫn</h3>
-                <button onclick="closeVideoModal()" class="text-slate-400 hover:text-white text-xl p-1">
+        <div class="bg-slate-900 rounded-2xl overflow-hidden max-w-3xl w-full border border-slate-700 shadow-2xl">
+            <div class="p-4 border-b border-slate-800 flex justify-between items-center">
+                <h4 id="modal-title" class="text-white font-bold text-sm">Xem Video</h4>
+                <button onclick="closeVideoModal()" class="text-slate-400 hover:text-white text-xl focus:outline-none">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
-            <div class="aspect-video bg-black flex items-center justify-center relative">
-                <iframe id="youtube-frame" class="w-full h-full" src="" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="aspect-video bg-black">
+                <iframe id="modal-iframe" class="w-full h-full" src="" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
-    <!-- Success Message Box Modal -->
-    <div id="msg-modal" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center p-4 backdrop-blur-sm">
-        <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-2xl text-center space-y-4">
-            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto">
-                <i class="fa-solid fa-check"></i>
-            </div>
-            <h3 class="text-xl font-bold text-slate-900">Gửi Tin Báo Thành Công!</h3>
-            <p id="msg-desc" class="text-sm text-slate-600">Yêu cầu của bà con đã được ghi nhận và chuyển ngay đến trực ban Công an xã Kim Phú.</p>
-            <button onclick="closeMsgModal()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-2.5 rounded-xl text-sm transition">Đã hiểu</button>
-        </div>
-    </div>
-
-    <!-- Leaflet JS for Map -->
+    <!-- Scripts -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script>
-        // Clock updater
+        // Mobile Menu Toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Realtime Clock Update
         function updateClock() {
             const now = new Date();
             document.getElementById('current-time').innerText = now.toLocaleTimeString('vi-VN');
@@ -522,90 +507,47 @@
         setInterval(updateClock, 1000);
         updateClock();
 
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Initialize Leaflet Map centered on Kim Phú, Quảng Trị approximate coords
-        const map = L.map('map').setView([16.75, 107.10], 13);
-
+        // Leaflet Map Initialization
+        const map = L.map('map').setView([16.8, 107.1], 13);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
-            attribution: '© OpenStreetMap contributors | Công an Xã Kim Phú'
+            attribution: '© OpenStreetMap'
         }).addTo(map);
 
-        // Marker locations data
+        // Map Markers Data
         const locations = [
-            {
-                lat: 16.758, lng: 107.095,
-                title: "Ngầm tràn Thôn 1 (Khe Giữa)",
-                status: "Ngập nặng",
-                color: "red",
-                desc: "Mực nước ngập sâu 0.8m, nước chảy xiết. Cấm tuyệt đối người và phương tiện qua lại."
-            },
-            {
-                lat: 16.752, lng: 107.112,
-                title: "Khu vực Chợ Trung Tâm Kim Phú",
-                status: "Cảnh báo",
-                color: "orange",
-                desc: "Ngập cục bộ 20cm do mưa lớn thoát nước chậm."
-            },
-            {
-                lat: 16.745, lng: 107.100,
-                title: "Trụ sở Công an Xã Kim Phú",
-                status: "An toàn",
-                color: "green",
-                desc: "Trụ sở hoạt động bình thường, trực ban 24/7 qua số 02323.575.568."
-            },
-            {
-                lat: 16.765, lng: 107.085,
-                title: "Đoạn đường liên thôn Thôn 3",
-                status: "Nguy cơ sạt lở",
-                color: "red",
-                desc: "Sạt lở taluy âm nhẹ, lực lượng chức năng đã giăng dây cảnh báo."
-            }
+            { lat: 16.81, lng: 107.09, title: "Ngầm tràn Thôn 1 (Khe Giữa)", status: "Ngập nặng 0.8m", type: "danger" },
+            { lat: 16.80, lng: 107.11, title: "Chợ Trung Tâm Kim Phú", status: "Cảnh báo ngập 20cm", type: "warning" },
+            { lat: 16.795, lng: 107.105, title: "Trụ sở Công an Xã Kim Phú", status: "Hoạt động bình thường", type: "safe" },
+            { lat: 16.815, lng: 107.12, title: "Đoạn đường liên thôn Thôn 3", status: "Nguy cơ sạt lở", type: "danger" }
         ];
 
-        let markers = [];
-
-        locations.forEach((loc, index) => {
-            let markerHtml = `<div style="background-color: ${loc.color}; width: 20px; height: 20px; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.5);"></div>`;
-            if(loc.color === 'red') {
-                markerHtml = `<div class="pulse-danger" style="background-color: #dc2626; width: 22px; height: 22px; border-radius: 50%; border: 2px solid white;"></div>`;
-            }
-
-            const customIcon = L.divIcon({
-                className: 'custom-div-icon',
-                html: markerHtml,
-                iconSize: [22, 22],
-                iconAnchor: [11, 11]
-            });
-
-            const marker = L.marker([loc.lat, loc.lng], {icon: customIcon}).addTo(map);
-            marker.bindPopup(`<b>${loc.title}</b><br><span style="color:${loc.color}; font-weight:bold;">Trạng thái: ${loc.status}</span><br>${loc.desc}`);
+        const markers = [];
+        locations.forEach(loc => {
+            const marker = L.marker([loc.lat, loc.lng]).addTo(map);
+            marker.bindPopup(`<b>${loc.title}</b><br>${loc.status}`);
             markers.push(marker);
         });
 
         function focusMarker(index) {
-            const loc = locations[index];
-            map.setView([loc.lat, loc.lng], 15);
-            markers[index].openPopup();
+            if (markers[index]) {
+                map.setView(markers[index].getLatLng(), 15);
+                markers[index].openPopup();
+            }
         }
 
-        // Video category filter
+        // Filter Videos
         function filterVideos(category) {
-            const buttons = document.querySelectorAll('.vid-btn');
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-red-700', 'text-white', 'active-filter');
-                btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-300');
-            });
-            event.target.classList.remove('bg-white', 'text-slate-700', 'border');
-            event.target.classList.add('bg-red-700', 'text-white', 'active-filter');
-
             const cards = document.querySelectorAll('.video-card');
+            const btns = document.querySelectorAll('.vid-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-red-700', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-700');
+            });
+            event.target.classList.remove('bg-white', 'text-slate-700');
+            event.target.classList.add('bg-red-700', 'text-white');
+
             cards.forEach(card => {
                 if (category === 'all' || card.getAttribute('data-category') === category) {
                     card.style.display = 'flex';
@@ -618,38 +560,22 @@
         // Video Modal Handler
         function openVideoModal(title, videoId) {
             document.getElementById('modal-title').innerText = title;
-            document.getElementById('youtube-frame').src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-            const modal = document.getElementById('video-modal');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
+            document.getElementById('modal-iframe').src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            document.getElementById('video-modal').classList.remove('hidden');
+            document.getElementById('video-modal').classList.add('flex');
         }
 
         function closeVideoModal() {
-            const modal = document.getElementById('video-modal');
-            modal.classList.remove('flex');
-            modal.classList.add('hidden');
-            document.getElementById('youtube-frame').src = '';
+            document.getElementById('modal-iframe').src = '';
+            document.getElementById('video-modal').classList.add('hidden');
+            document.getElementById('video-modal').classList.remove('flex');
         }
 
-        // Report Form Handler
+        // Handle Report Submission
         function handleReportSubmit(e) {
             e.preventDefault();
-            const name = document.getElementById('sender-name').value;
-            const phone = document.getElementById('sender-phone').value;
-
-            // Show success modal
-            const msgModal = document.getElementById('msg-modal');
-            document.getElementById('msg-desc').innerText = `Cảm ơn anh/chị ${name} (${phone}). Tin báo đã được chuyển thành công về trực ban Công an xã Kim Phú (Hotline: 02323.575.568).`;
-            msgModal.classList.remove('hidden');
-            msgModal.classList.add('flex');
-
+            alert('Cảm ơn ông/bà đã gửi tin báo. Công an xã Kim Phú đã ghi nhận thông tin và sẽ liên hệ hỗ trợ trong thời gian sớm nhất!');
             document.getElementById('report-form').reset();
-        }
-
-        function closeMsgModal() {
-            const msgModal = document.getElementById('msg-modal');
-            msgModal.classList.remove('flex');
-            msgModal.classList.add('hidden');
         }
     </script>
 </body>
